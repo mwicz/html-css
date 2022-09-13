@@ -7,9 +7,27 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="icor" id="icor" value="#00ff00">
+        </p>
+        <p>
+            <label for="inv">Nivel de Satisfação:</label>
+            <input type="range" name="inv" id="inv" min="1" max="5" value="1">
+        </p>
+        <p>
+            <label for="ifot">Foto do Perfil:</label>
+            <input type="file" name="ifot" id="ifot">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 
 
-    <a href="form6.html" target="_blank" >Next</a>
+    <a href="form7.html" target="_blank" >Next</a>
 </body>
 </html>

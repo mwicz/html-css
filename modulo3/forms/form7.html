@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <h1>Exemplo de Formulário</h1>
+        <label for="prov">Provincia:</label>
+        <select name="prov" id="iprov">
+            <option value="">---Escolha---</option>
+            <optgroup label="Hokkaidō">
+                <option value="">Hokkaidō</option>
+
+            </optgroup>
+            <optgroup label="Tōhoku">
+                 <option value="">Aomori</option>
+                <option value="">Iwate</option>
+                <option value="">Miyagi</option>
+                 <option value="">Akita</option>
+                <option value="">Yamagata</option>
+                <option value="">Fukushima</option>
+            </optgroup>
+
+            <optgroup label="Kantō">
+            <option value="">Ibaraki</option>
+                <option value="">Tochigi</option>
+                <option value="">Gunma</option>
+                <option value="">Saitama</option>
+                <option value="">Chiba</option>
+                <option value="">Tóquio</option>
+                <option value="">Kanagawa</option>
+            </optgroup>
+            <optgroup label="Chūbu">
+                <option value="">Niigata</option> 
+                <option value="">Toyama</option>
+                <option value="">Ishikawa</option>
+                <option value="">Fukui</option>
+                <option value="">Yamanashi</option>
+                <option value="">Nagano</option>
+                <option value="">Gifu</option>
+                <option value="">Shizuoka</option>
+                <option value="">Aichi</option>
+            </optgroup>
+
+
+            <optgroup label="Kinki">
+                <option value="">Mie</option>
+                <option value="">Shiga</option>
+                <option value="">Quioto</option>
+                <option value="">Osaka</option>
+                <option value="">Hyogo</option>
+                <option value="">Nara</option>
+                <option value="">Wakayama</option>
+            </optgroup>
+
+            <optgroup label="Chūgoku">
+                <option value="">Tottori</option>
+                <option value="">Shimane</option>
+                <option value="">Okayama</option>
+                <option value="">Hiroshima</option>
+                <option value="">Yamaguchi</option>
+            </optgroup>
+
+            <optgroup label="Shikoku">
+                <option value="">Tokushima</option>
+                <option value="">Kagawa</option>
+                <option value="">Ehime</option>
+                <option value="">Kochi</option>
+            </optgroup>
+ 
+            <optgroup label="Kyūshū">
+                <option value="">Fukuoka</option>
+                <option value="">Saga</option>
+                <option value="">Nagasaki</option>
+                <option value="">Kumamoto</option>
+                <option value="">Oita</option>
+                <option value="">Miyazaki</option>
+                <option value="">Kagoshima</option>
+            </optgroup>
+            <optgroup label="Okinawa">
+                <option value="">Okinawa</option>
+            </optgroup>
+        </select>
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="">Administrador</option>
+                <option value="">Professor</option>
+                <option value="">Médico</option>
+                <option value="">Desenvolvedor</option>
+            </datalist>
+
+        </p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>  
+    </form>
+    <a href="form8.html" target="_blank" >Next</a>
+    
+</body>
+</html>
