@@ -7,6 +7,57 @@
     <title>Outputs</title>
 </head>
 <body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Soma</legend>
+            <p>
+                <label for="in1">Numero:</label>
+                <input type="number" name="in1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+            <p>
+                <label for="in2">Numero:</label>
+                <input type="number" name="in2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+            <p>
+                <label for="isoma">Soma:</label>
+                <output name="soma" id="isoma">0</output>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Number</legend>
+            <p>
+                <label for="num2">Numero:</label>
+                <input type="range" name="num2" id="num2" min="0" max="10" oninput="ival.innerHTML = Number(num2.value)">
+                <output id="ival">5</output>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Age</legend>
+            <p>
+                <label for="iano">Em que ano vc nasceu?</label>
+                <input type="number" name="ano" id="iano" min="1900" max="ano()" oninput="calcIdade()">
+            </p>
+            <p>
+                <label for="idade">Sua idade é:</label>
+                <output id="idade">0</output>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p> 
+</form>
+<script>
+    function ano(){
+        let atual = new Date().getFullYear();
+        return atual;
+    }
+    function calcIdade(){
+        let atual = new Date().getFullYear()
+        idade.innerHTML = Number(atual) - Number(iano.value)
+    }
+</script>
     
 </body>
 </html>
